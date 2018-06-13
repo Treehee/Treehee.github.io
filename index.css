@@ -1,15 +1,8 @@
 @charset "UTF-8";
 
-@font-face{
-	font-family: Belwe Medium;
-	src: url(fonts/OPTIBelwe-Medium.otf);
-}
-ul{
-	font-size: 0px;	
-}
-ul, li, nav, a{
-	margin: 0;
-	padding: 0;
+ul, p, li, nav, a{
+	margin: 0px;
+	padding: 0px;
 }
 nav{
 	width: calc(100%-4px);
@@ -25,6 +18,7 @@ nav ul{
 	height: 100%;
 	width: 100%;
 	background-color: #39bf95;
+	font-size: 0px;	
 }
 nav li{
 	height: 26px;
@@ -47,39 +41,6 @@ nav a{
 	text-decoration: none;
 	margin-top: 5px;
 }
-
-
-
-ul#cards{
-	width: 1024px;
-	background-color: #404040;
-	background-color: rgba(120, 120, 120, 0.4);
-}
-
-ul#cards li{
-	text-align: center;
-	width: 25%;
-	display: inline-grid;
-	font-size: 14px;
-	margin-bottom: 10px;
-	margin-top: 10px;
-}
-li p{
-	width: 95%;
-	padding: 0;
-	margin: 0;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	font-family: "Belwe Medium", Belwe, Helvetica;
-}
-li a img{
-	width: 100%;
-	padding: 0;
-	margin: 0;
-	margin-left: auto;
-	margin-right: auto;
-}
 html{
 	width: 100%;
 	height: 100%;
@@ -95,10 +56,6 @@ body{
 	width: 100%;
 	min-height: calc(100vh - 70px);
 }
-footer{
-	font-style: italic;
-	font-family: serif;
-}
 div.container{
 	width: 100vw;
 	min-height: calc(100vh - 72px);
@@ -110,8 +67,21 @@ div.container{
 }
 div.content{
 	width: 1024px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
+	margin-top: 104px;
+	font-size: 16px;
+	font-family: georgia;
+	color: #eeeeee;
+}
+div#bg{
+	background-color: #404040;
+	background-color: rgba(120, 120, 120, 0.4);
+}
+div#bio{
+	width: calc(100% - 20px);
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin: auto;
 }
 h1{
 	padding: 0px;
@@ -124,4 +94,13 @@ h1{
 	border-style: solid;
 	border-width: 2px;
 	border-color: #278568;
+}
+ul#nicknames{
+	padding-left: 25px;
+}
+footer{
+	font-style: italic;
+	font-family: serif;
+	margin: auto;
+	margin-top: 15px;
 }
